@@ -1,0 +1,467 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+MX+Guides&family=Special+Gothic+Expanded+One&display=swap');
+
+
+
+.header-content h2{
+    text-align: center;
+    margin-top: 10vh;
+    letter-spacing: -1px;
+    font-size: 64px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    color:black;
+    
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+    color:#fafafa
+}
+
+
+/*헤더영역*/
+header{
+    width:100%;
+    height: 150vh;
+    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
+    url(images/to.png) center no-repeat;
+   padding: 10px 5%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav button {
+    background-color: transparent;  /* 배경 투명 */
+    border: none;                   /* 테두리 제거 */
+    padding: 8px;                   /* 클릭 영역 확보 */
+    cursor: pointer;
+    appearance: none;               /* 기본 브라우저 스타일 비활성화 */
+    -webkit-appearance: none;       /* 사파리/크롬용 추가 */
+  }
+
+
+
+  
+.bottom-logo{
+    display: block;
+    margin: 1100px auto 30px;
+    width: 400px;
+    filter:brightness(0) invert(1);
+    z-index:1000;
+    position: relative;
+}
+
+
+
+/*body*/
+.group-introduce{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: black;
+    font-family:"Montserrat", sans-serif ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.album-introduce {
+    margin-top: 0;
+    font-size: 32px;
+    text-align: center;
+    color: black;
+    font-family:"Montserrat", sans-serif ;
+    margin-bottom: 100;
+
+}
+
+.click-card {
+    font-size: 16px;
+    text-align: center;
+    color:black;
+    font-family:"Montserrat", sans-serif ;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block; 
+  }
+
+
+
+
+
+.card h3, .card p {
+    color: black; /* 또는 원하시는 색상 */
+  }
+
+.album-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.card {
+  flex: 0 1 calc(25% - 20px);
+  width: 220px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/*kma*/
+.kma-inner{
+    background-color: #121212;
+    color: #fff;
+    padding: 60px 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.kma-header {
+    margin-bottom: 30px;
+    text-shadow: 0px 2px 4px rgba(201, 199, 199, 0.5);
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.kma-logo {
+    text-align: center;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+    margin-top: 100px;
+  }
+
+.kma-description{
+    text-align: center;
+    font-size: 16px;
+
+}
+
+
+
+.accordion{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-label{
+    display: inline-block;
+    cursor: pointer;
+    color: #ccc;
+    margin: 10px 0;
+    user-select: none;
+}
+
+.content {
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.4s ease, padding 0,4s ease;
+    padding: 0 16px;
+}
+
+
+
+#toggle-intro:checked ~ .content {
+    max-height: 1000px;  /* 충분히 큰 값 */
+    padding: 16px;
+  }
+
+/* ── 헤더 전체: flex-row, 좌우 끝배치 ── */
+.site-header {
+    display: flex;
+    justify-content: space-between; /* 로고 ↔ 메뉴 양끝에 배치 */
+    align-items: center;            /* 수직 중앙 정렬 */
+    padding: 16px 24px;            /* 위아래 16px, 좌우 32px 여백 */
+    background: #fff;   
+    box-shadow: 0 2px 5px rgba(75, 75, 75, 0.15);            /* 필요에 따라 배경색 조정 */
+  }
+  
+  /* ── 로고 크기 조절 ── */
+  .header-logo img {
+    height: 70px;  /* 원하는 높이 */
+    width: auto;
+  }
+  
+
+  /* ── 네비게이션 메뉴 ── */
+  .main-nav ul {
+    display: flex;   /* 가로 정렬 */
+    gap: 24px;       /* 메뉴 간격 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color .2s;
+  }
+  
+  .main-nav a:hover {
+    color: #000;
+  }
+
+/*footer 영역*/
+/* footer 전체 */
+.site-footer {
+  background: #f5f5f5;
+  color: #333;
+  padding: 2rem 1rem 4rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* 상단 네 개 컬럼을 flex 배치 */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding-bottom: 2rem;
+
+  
+}
+
+/* 각 컬럼 공통 스타일 */
+.footer-col {
+  flex: 1 1 300px; /* 최소 200px, 여유시 확장 */
+  min-width: 180px;
+  margin-bottom: 2rem;
+}
+
+/* Our New Waves 항목 */
+.footer-col h4 {
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: .3rem;
+  font-size: .95rem;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.footer-col ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.5em;
+  color: #333;
+}
+
+/* SNS 아이콘 */
+.footer-social{
+  display:flex;
+  gap:1rem;
+  margin-top: 0.1rem;
+}
+
+.footer-social a {
+  font-size: 1.3rem;
+  color: #333;
+  transition: color .2s;
+  
+}
+
+.footer-social a:hover {
+  color: #555;
+}
+
+/* 하단 중앙 텍스트 */
+.footer-bottom {
+  position:absolute;
+  bottom: 1rem;             /* footer 맨 아래에서 1rem 위로 */
+  left: 50%;                /* 가로 중앙 잡고 */
+  transform: translateX(-50%);
+  width: auto;
+  text-align: center;
+
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: .9rem;
+  color: #777;
+}
+
+
+
+
+
+
+/*MEMBERS PAGE*/
+.members-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.members-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/*멤버 카드 그리드*/
+.members-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 2rem;              
+  padding: 2rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.members-card{
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+
+}
+
+.members-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.members-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+  
+
+/* MEMBERS 페이지만 적용 */
+
+.members-page {
+  margin:0;
+  padding:0;
+}
+
+.members-page .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.members-page .site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: none;      /* 기존 max-width 해제 */
+  padding: 0 2rem;      /* 좌우 여백만 남김 */
+  box-sizing: border-box;
+}
+
+.members-page .logo img {
+  max-height: 80px;
+}
+
+.members-page .main-nav ul {
+    display: flex; 
+    justify-content: flex-end;  
+    gap: 2rem;       /* 메뉴 간격 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.members-page .main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.members-page .content {
+  padding-top: 120px; /* 헤더 높이에 맞춰 조정하세요 */
+}
+
+/*반응형(헤더*/
+@media only screen and(max-width:768px) {
+    .logo{
+        font: size 20px;
+    }
+    nav button{
+        padding:5px 10px;
+    }
+    .lang{
+        padding: 4px 8px;
+        width:90%
+    }
+}
